@@ -5,7 +5,7 @@ import { AboutComponent } from 'src/app/modules/about/about.component';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DefaultComponent } from './default.component';
-
+import { MatSidenavModule, MatDividerModule, MatCardModule, MatPaginatorModule, MatTableModule } from '@angular/material';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { DefaultComponent } from './default.component';
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    MatSidenavModule
   ]
 })
 export class DefaultModule { }
