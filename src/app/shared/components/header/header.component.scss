@@ -1,5 +1,5 @@
 :host {
-    background-color: #3f51b5;
+    background-color: #efefef;
     color: #fff;
 }
 
@@ -22,6 +22,16 @@ header {
 ul li {
     list-style: none;
   }
+
+  a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: darkgray;
+}
+a:hover {
+    color: red;
+}
 
 //   .mat-toolbar.mat-primary {
 //     background: #007bff;
