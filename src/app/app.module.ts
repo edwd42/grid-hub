@@ -4,11 +4,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultModule } from './layouts/default/default.module';
+import { IstreetlightComponent } from './services/istreetlight/istreetlight.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IstreetlightComponent
   ],
   imports: [
     BrowserModule,
