@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatSidenavModule } from '@angular/material';
+import { MatDividerModule, MatSidenavModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/modules/about/about.component';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
@@ -18,7 +18,8 @@ import { DefaultComponent } from './default.component';
     CommonModule,
     RouterModule,
     SharedModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule
   ]
 })
 export class DefaultModule { }
