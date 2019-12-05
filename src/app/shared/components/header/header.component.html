@@ -1,1 +1,40 @@
-<p>header works!</p>
+<mat-toolbar color="red">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()" style="color: white; background-color:transparent;">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span id="logo" style="padding-left: 10px;">
+            <a routerLink="/">
+                Grid<img src="assets/img/react_logo.png" alt="logo" id="logo-img" wkdth="38" height="38" />Hub</a>
+            <sup style="font-size:medium;">&trade;</sup>
+        </span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button style="color: white; background-color:transparent;">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button style="color: white; background-color:transparent;">
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" style="color: white; background-color:transparent;">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign out
+                        </button>
+                    </mat-menu>
+
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
