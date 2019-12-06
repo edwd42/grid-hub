@@ -9,11 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class PageNotFoundComponent implements OnInit {
 
   constructor(private location: Location) { }
-  goBack(): void {
-    this.location.back();
-  }
 
   ngOnInit() {
   }
 
+  goBack(): void {
+    this.location.back();
+  }
 }

@@ -20,7 +20,7 @@ export class ChartComponent implements OnInit {
   }
 
   goToUrl(): void {
-    // this.document.location.href = 'http://leaflet-geojson-app-stage1.s3-website-us-east-1.amazonaws.com/';
+    // this.document.location.href = '"http://leaflet-geojson-app-stage1.s3-website-us-east-1.amazonaws.com/" target="visualization"';
     // window.open("http://leaflet-geojson-app-stage1.s3-website-us-east-1.amazonaws.com", 'leaflet_heat_map', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=400,height=350');
     window.open(this.url, 'leaflet_heat_map', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1024,height=768');
     // this.document.location.href = "/";
