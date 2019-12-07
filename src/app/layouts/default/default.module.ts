@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatDividerModule, MatSidenavModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule, MatDividerModule, MatSidenavModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/modules/about/about.component';
 import { ChartComponent } from 'src/app/modules/chart/chart.component';
@@ -23,7 +24,9 @@ import { DefaultComponent } from './default.component';
     RouterModule,
     SharedModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    FlexLayoutModule,
+    MatCardModule,
   ]
 })
 export class DefaultModule { }
