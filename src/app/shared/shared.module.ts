@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule, MatDividerModule, MatIconModule, MatListModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+import { HighchartsChartModule } from 'highcharts-angular';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AreaComponent } from './widgets/area/area.component';
-
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { AreaComponent } from './widgets/area/area.component';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    HighchartsChartModule
   ],
   exports: [
     HeaderComponent,
