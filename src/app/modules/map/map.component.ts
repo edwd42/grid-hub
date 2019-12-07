@@ -1,4 +1,39 @@
-import { DOCUMENT } from '@angular/common';
+import { AfterViewInit, Component } from '@angular/core';
+import * as L from 'leaflet';
+
+@Component({
+  selector: 'app-map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.scss']
+})
+export class MapComponent implements AfterViewInit {
+  private map;
+
+  private initMap(): void {
+    this.map = L.map('map', {
+      center: [39.8282, -98.5795],
+      zoom: 3
+    });
+  }
+
+  tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(this.map);
+
+  constructor() { }
+
+  ngAfterViewInit(): void {
+    this.initMap();
+  }
+}
+
+  /**
+   *  this section opens a nodejs leflet project hosted on S3
+   *  moved from chart.component.ts
+   * 
+   
+   import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 // import * as data from '../../../assets/data/providence_streetlight_data.json';
 
@@ -27,3 +62,5 @@ export class ChartComponent implements OnInit {
   }
 
 }
+
+   */
