@@ -1,6 +1,5 @@
-<!-- <mat-divider [vertical]="true"></mat-divider> -->
 <div>
-    <app-widget-area></app-widget-area>
+    <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
 
 <br>
@@ -28,6 +27,13 @@
 
 <mat-divider></mat-divider>
 
-<div>
-    chart here
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="60">Table</div>
+    <div fxFlex="40">
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
+    </div>
 </div>
+
+<br><br><br>

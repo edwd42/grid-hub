@@ -5,6 +5,7 @@ import { MatCardModule, MatDividerModule, MatSidenavModule } from '@angular/mate
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from 'src/app/modules/about/about.component';
 import { ChartComponent } from 'src/app/modules/chart/chart.component';
+import { DashboardService } from 'src/app/modules/dashboard.service';
 import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { PageNotFoundComponent } from 'src/app/modules/page-not-found/page-not-found.component';
 import { SharedModule } from 'src/app/shared/shared.module';
@@ -27,6 +28,9 @@ import { DefaultComponent } from './default.component';
     MatDividerModule,
     FlexLayoutModule,
     MatCardModule,
+  ],
+  providers: [
+    DashboardService
   ]
 })
 export class DefaultModule { }
