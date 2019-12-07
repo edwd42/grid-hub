@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import HC_exporting from 'highcharts/modules/exporting';
 
 @Component({
   selector: 'app-widget-area',
@@ -73,6 +74,13 @@ export class AreaComponent implements OnInit {
         data: [2, 2, 2, 6, 13, 30, 46]
       }]
     };
+    HC_exporting(Highcharts);
+
+    setTimeout(() => {
+      window.dispatchEvent(
+        new Event('resize')
+      );
+    }, 300);
 
   }
 
