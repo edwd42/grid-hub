@@ -19,6 +19,7 @@ import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 import { PieComponent } from "./widgets/pie/pie.component";
 import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
+import { SimulationComponent } from "./widgets/simulation/simulation.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     AreaComponent,
     CardComponent,
     PieComponent,
-    ProvStreetlightsComponent
+    ProvStreetlightsComponent,
+    SimulationComponent
   ],
   imports: [
     CommonModule,
@@ -50,7 +52,8 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     AreaComponent,
     CardComponent,
     PieComponent,
-    ProvStreetlightsComponent
+    ProvStreetlightsComponent,
+    SimulationComponent
   ]
 })
 export class SharedModule {}
