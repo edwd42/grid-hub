@@ -1,13 +1,16 @@
 <div>
-  <!-- <app-widget-area [data]="bigChart"></app-widget-area> -->
-  <app-widget-prov-streetlights></app-widget-prov-streetlights>
+  <app-widget-prov-streetlights
+    [data]="provStreetlights"
+  ></app-widget-prov-streetlights>
 </div>
 
-<br />
+<br /><mat-divider></mat-divider><br />
 
-<mat-divider></mat-divider>
+<div>
+  <app-widget-area [data]="bigChart"></app-widget-area>
+</div>
 
-<br />
+<br /><mat-divider></mat-divider><br />
 
 <div
   fxLayout="row"
@@ -49,11 +52,7 @@
   </mat-card>
 </div>
 
-<br />
-
-<mat-divider></mat-divider>
-
-<br />
+<br /><mat-divider></mat-divider><br />
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
   <div fxFlex="60">

@@ -1,14 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
-import * as Highcharts from 'highcharts';
-import HC_exporting from 'highcharts/modules/exporting';
+import { Component, Input, OnInit } from "@angular/core";
+import * as Highcharts from "highcharts";
+import HC_exporting from "highcharts/modules/exporting";
 
 @Component({
-  selector: 'app-widget-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: "app-widget-card",
+  templateUrl: "./card.component.html",
+  styleUrls: ["./card.component.scss"]
 })
 export class CardComponent implements OnInit {
-
   @Input() label: string;
   @Input() total: string;
   @Input() percentage: string;
@@ -17,12 +16,12 @@ export class CardComponent implements OnInit {
   Highcharts = Highcharts;
   chartOptions = {};
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.chartOptions = {
       chart: {
-        type: 'area',
+        type: "area",
         backgroundColor: null,
         borderWidth: 0,
         margin: [2, 2, 2, 2],
@@ -45,11 +44,11 @@ export class CardComponent implements OnInit {
         enabled: false
       },
       exporting: {
-        enabled: false,
+        enabled: false
       },
       xAxis: {
         labels: {
-          enabled: false,
+          enabled: false
         },
         title: {
           text: null
@@ -60,7 +59,7 @@ export class CardComponent implements OnInit {
       },
       yAxis: {
         labels: {
-          enabled: false,
+          enabled: false
         },
         title: {
           text: null
@@ -69,18 +68,17 @@ export class CardComponent implements OnInit {
         endOnTick: false,
         tickOptions: []
       },
-      series: [{
-        data: this.data
-      }]
+      series: [
+        {
+          data: this.data
+        }
+      ]
     };
 
     HC_exporting(Highcharts);
 
     setTimeout(() => {
-      window.dispatchEvent(
-        new Event('resize')
-      );
+      window.dispatchEvent(new Event("resize"));
     }, 300);
   }
-
 }

@@ -1,7 +1,10 @@
 import { Component, Input, OnInit } from "@angular/core";
 import * as Highcharts from "highcharts";
-import * as $ from 'jquery';
-// import { ChartModule } from 'highcharts-angular';
+import HC_exporting from "highcharts/modules/exporting";
+
+declare var require: any;
+const data = require("highcharts/modules/data");
+data(Highcharts);
 
 @Component({
   selector: "app-widget-prov-streetlights",
@@ -11,35 +14,42 @@ import * as $ from 'jquery';
 export class ProvStreetlightsComponent implements OnInit {
   apiUrl = "https://performance.providenceri.gov/resource/sw6f-wzuw.csv";
 
-  @Input() data: any = [];
+  @Input() data = [];
 
-  chartOptions: {};
   Highcharts = Highcharts;
 
-  constructor() {}
-
-  public options: any = {
+  public chartOptions: any = {
     chart: {
-      scrollablePlotArea: {
-        minWidth: 700
-      },
-      zoomType: "xy"
+      type: "line"
     },
-
-    // data: {
-    //   csvURL: "https://performance.providenceri.gov/resource/sw6f-wzuw.csv",
-    //   beforeParse: function(csv) {
-    //     // console.log(this.data.query.results[0]);
-    //     return csv.replace(/\n\n/g, "\n");
-    //   }
-    // },
+    // data: this.data,
+    data: {
+      // csvURL: this.apiUrl,
+      csv:
+        // tslint:disable-next-line: max-line-length
+        '"Date";"kWh"\n"2009-07-24";1072823\n"2009-08-24";1297714\n"2009-09-23";1297714\n"2009-10-22";1495544\n"2009-11-20";1649227\n"2009-12-22";1925251\n"2010-01-25";2057458\n"2010-02-23";1639038\n"2010-03-25";1517911\n"2010-04-26";1433020\n"2010-05-24";1093667\n"2010-06-24";1119142\n"2010-07-26";1162189\n"2010-08-25";1211676\n"2010-09-23";1345656\n"2010-10-22";1514288\n"2010-11-22";1783216\n"2010-12-22";1819015\n"2011-01-24";2003685\n"2011-02-22";1652261\n"2011-03-23";1480231\n"2011-04-25";1494825\n"2011-05-23";1103718\n"2011-06-23";1127148\n"2011-07-25";1166758\n"2011-08-24";1213067\n"2011-09-22";1345515\n"2011-10-21";1515164\n"2011-11-22";1845160\n"2011-12-22";1827322\n"2012-01-24";2012113\n"2012-02-22";1612550\n"2012-03-23";1525943\n"2012-04-24";1453537\n"2012-05-24";1187984\n"2012-06-22";1054983\n"2012-07-25";1204539\n"2012-08-24";1215006\n"2012-09-24";1444043\n"2012-10-23";1529719\n"2012-11-21";1680481\n"2012-12-21";1827482\n"2013-01-24";2075366\n"2013-02-22";1656174\n"2013-03-22";1434885\n"2013-04-24";1504714\n"2013-05-24";1188700\n"2013-06-24";1125509\n"2013-07-25";1131894\n"2013-08-26";1296467\n"2013-09-24";1359637\n"2013-10-23";1527831\n"2013-11-21";1678415\n"2013-12-23";1947944\n"2014-01-24";1950579\n"2014-02-24";1767154\n"2014-03-25";1472011\n"2014-04-24";1356120\n"2014-05-27";1306084\n"2014-06-24";1012478\n"2014-07-24";1098700\n"2014-08-22";1171307\n"2014-09-23";1481777\n"2014-10-23";1581002\n"2014-11-21";1683686\n"2014-12-23";1954146\n"2015-01-26";2078187\n"2015-02-24";1649572\n"2015-03-25";1474442\n"2015-04-24";1356052\n"2015-05-26";1267211\n"2015-06-24";1050659\n"2015-07-24";1097399\n"2015-08-24";1252903\n"2015-09-23";1397206\n"2015-10-22";1525348\n"2015-11-20";1676738\n"2015-12-22";1938636\n"2016-01-25";2063469\n"2016-02-23";1597502\n"2016-03-24";1512629\n"2016-04-25";1438315\n"2016-05-27";1257327\n"2016-06-24";1024455',
+      googleSpreadsheetKey: false,
+      googleSpreadsheetWorksheet: false
+    },
+    seriesMapping: [
+      {
+        x: 0,
+        y: 1
+      }
+    ],
     title: {
-      text: "Providence, RI Monthly Streetlight Electricity Usage (kWh)"
+      text: "Providence, RI Monthly Streetlight Electricity Usage"
     },
     subtitle: {
-      text: "Source: OpenPVD.com"
+      text:
+        'source: <a href="http://OpenPVD.com" target="_blank">OpenPVD.com</a>'
     },
     plotOptions: {
+      line: {
+        marker: {
+          enabled: false
+        }
+      },
       series: {
         allowPointSelect: true,
         states: {
@@ -52,136 +62,37 @@ export class ProvStreetlightsComponent implements OnInit {
             dashStyle: "dot"
           }
         },
-        cursor: "pointer",
-        marker: {
-          lineWidth: 1
-        },
-        animation: false
+        animation: true
       }
     },
     exporting: {},
     credits: {
       text: "cloud.highcharts.com",
-      href: "https://cloud.highcharts.com"
-    },
-    xAxis: {
-      tickInterval: 604800000,
-      tickWidth: 0,
-      gridLineWidth: 1,
-      labels: {
-        align: "left",
-        x: 3,
-        y: -3
-      },
-      type: "datetime"
-    },
-    yAxis: [
-      {
-        title: {
-          text: "kWh"
-        },
-        labels: {
-          align: "left",
-          x: 3,
-          y: 16,
-          format: "{value:.,0f}"
-        },
-        showFirstLabel: false,
-        index: 0,
-        opposite: false,
-        reversed: false
-      },
-      {
-        linkedTo: 0,
-        gridLineWidth: 0,
-        opposite: true,
-        title: {
-          text: null
-        },
-        labels: {
-          align: "right",
-          x: -3,
-          y: 16,
-          format: "{value:.,0f}"
-        },
-        showFirstLabel: false,
-        index: 1
-      }
-    ],
-    legend: {
-      align: "left",
-      verticalAlign: "top",
-      borderWidth: 0
-    },
-    tooltip: {
-      shared: true,
-      crosshairs: true,
-      valueSuffix: " kWh"
-    },
-    series: [
-      {
-        turboThreshold: 0,
-        _colorIndex: 0,
-        _symbolIndex: 0
-      },
-      {
-        turboThreshold: 0,
-        _colorIndex: 1,
-        _symbolIndex: 0
-      },
-      {
-        data: (function() {
-          var data;
-          $.ajax({
-            url: "https://performance.providenceri.gov/resource/sw6f-wzuw.csv",
-            data: query,
-            async: false,
-            content: "application/json",
-            type: "POST",
-            success: function(point) {
-              data = point.queries[0].results[0].values;
-            }
-          });
-          return data;
-        })()
-      }
-    ],
-    lang: {
-      thousandsSep: " ,"
+      href: '"https://cloud.highcharts.com" target="_blank"'
     },
     caption: {
       text:
-        "Chart of streetlight usage in kWh for the City of Providence, RI\nData from https://performance.providenceri.gov/Sustainability/Monthly-Streetlight-Electricity-Usage/sw6f-wzuw\n"
+        // tslint:disable-next-line: max-line-length
+        "Chart of Monthly Streetlight Electricity Usage for Providence, RI.\n Data provided by https://performance.providenceri.gov/Sustainability/Monthly-Streetlight-Electricity-Usage/sw6f-wzuw\n"
     },
-    stockTools: {
-      gui: {
-        buttons: ["simpleShapes", "lines", "crookedLines"],
-        enabled: false
+    yAxis: {
+      title: {
+        text: "kWh"
       }
     },
-    navigation: {
-      events: {
-        showPopup:
-          'function(e){this.chart.indicatorsPopupContainer||(this.chart.indicatorsPopupContainer=document.getElementsByClassName("highcharts-popup-indicators")[0]),this.chart.annotationsPopupContainer||(this.chart.annotationsPopupContainer=document.getElementsByClassName("highcharts-popup-annotations")[0]),"indicators"===e.formType?this.chart.indicatorsPopupContainer.style.display="block":"annotation-toolbar"===e.formType&&(this.chart.activeButton||(this.chart.currentAnnotation=e.annotation,this.chart.annotationsPopupContainer.style.display="block")),this.popup&&(c=this.popup)}',
-        closePopup:
-          'function(){this.chart.annotationsPopupContainer.style.display="none",this.chart.currentAnnotation=null}',
-        selectButton:
-          'function(e){var t=e.button.className+" highcharts-active";e.button.classList.contains("highcharts-active")||(e.button.className=t,this.chart.activeButton=e.button)}',
-        deselectButton:
-          'function(e){e.button.classList.remove("highcharts-active"),this.chart.activeButton=null}'
-      },
-      bindingsClassName: "tools-container"
-    },
-    annotations: []
+    xAxis: {
+      type: "category"
+    }
   };
 
-  // HC_exporting(Highcharts);
-
-  // setTimeout(() => {
-  //   window.dispatchEvent(new Event("resize"));
-  // }, 300);
+  constructor() {}
 
   ngOnInit() {
-    Highcharts.chart("container", this.options);
+    Highcharts.chart("container", this.chartOptions);
+    HC_exporting(Highcharts);
+
+    setTimeout(() => {
+      window.dispatchEvent(new Event("resize"));
+    }, 300);
   }
 }

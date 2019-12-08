@@ -41,7 +41,6 @@ export class DashboardComponent implements OnInit {
   bigChart = [];
   cards = [];
   pieChart = [];
-  prov_streetlights = [];
 
   displayedColumns: string[] = ["position", "name", "weight", "symbol"];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -54,7 +53,6 @@ export class DashboardComponent implements OnInit {
     this.bigChart = this.dashboardService.bigChart();
     this.cards = this.dashboardService.cards();
     this.pieChart = this.dashboardService.pieChart();
-    // this.prov_streetlights = this.dashboardService.prov_streetlights();
 
     this.dataSource.paginator = this.paginator;
   }

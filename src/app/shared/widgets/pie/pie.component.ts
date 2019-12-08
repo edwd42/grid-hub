@@ -15,8 +15,6 @@ export class PieComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // let total = this.chartOptions;
-    // console.log("total == ", total['chart'].type);
     this.chartOptions = {
       chart: {
         plotBackgroundColor: null,
@@ -51,9 +49,6 @@ export class PieComponent implements OnInit {
         {
           name: "Brands",
           colorByPoint: true,
-          total100: function() {
-            console.log(this.data[0]);
-          },
           data: this.data
         }
       ]

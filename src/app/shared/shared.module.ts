@@ -10,6 +10,7 @@ import {
   MatToolbarModule
 } from "@angular/material";
 import { RouterModule } from "@angular/router";
+import { ChartModule } from "angular-highcharts";
 import { HighchartsChartModule } from "highcharts-angular";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
@@ -39,7 +40,8 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    ChartModule
   ],
   exports: [
     HeaderComponent,
