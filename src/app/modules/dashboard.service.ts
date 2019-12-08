@@ -77,4 +77,8 @@ export class DashboardService {
       }
     ];
   }
+
+  provStreetlights() {
+    return null;
+  }
 }

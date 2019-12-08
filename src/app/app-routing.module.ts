@@ -5,7 +5,6 @@ import { AboutComponent } from "./modules/about/about.component";
 // import { ChartComponent } from './modules/chart/chart.component';
 import { DashboardComponent } from "./modules/dashboard/dashboard.component";
 import { PageNotFoundComponent } from "./modules/page-not-found/page-not-found.component";
-import { SimulationComponent } from "./shared/widgets/simulation/simulation.component";
 
 const routes: Routes = [
   {
@@ -20,7 +19,7 @@ const routes: Routes = [
         path: "about",
         component: AboutComponent
       },
-      { path: "simulation", component: SimulationComponent },
+      // { path: "simulation", component: SimulationComponent },
       { path: "**", component: PageNotFoundComponent }
     ]
   }

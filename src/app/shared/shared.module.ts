@@ -10,7 +10,6 @@ import {
   MatToolbarModule
 } from "@angular/material";
 import { RouterModule } from "@angular/router";
-import { ChartModule } from "angular-highcharts";
 import { HighchartsChartModule } from "highcharts-angular";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
@@ -42,8 +41,7 @@ import { SimulationComponent } from "./widgets/simulation/simulation.component";
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule,
-    ChartModule
+    HighchartsChartModule
   ],
   exports: [
     HeaderComponent,

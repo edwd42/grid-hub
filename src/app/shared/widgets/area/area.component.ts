@@ -38,7 +38,7 @@ export class AreaComponent implements OnInit {
           text: "Billions"
         },
         labels: {
-          formatter: function() {
+          formatter() {
             return this.value / 1000;
           }
         }

@@ -6,13 +6,17 @@
 
 <br /><mat-divider></mat-divider><br />
 
+<app-widget-simulation [data]="provStreetlights"></app-widget-simulation>
+
+<br /><mat-divider></mat-divider><br />
+
 <div>
   <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
 
 <br /><mat-divider></mat-divider><br />
 
-<div
+<!-- <div
   fxLayout="row"
   fxLayoutAlign="space-between center"
   fxLayoutGap="20px"
@@ -50,9 +54,9 @@
       [data]="cards"
     ></app-widget-card>
   </mat-card>
-</div>
+</div> -->
 
-<br /><mat-divider></mat-divider><br />
+<!-- <br /><mat-divider></mat-divider><br /> -->
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
   <div fxFlex="60">
@@ -89,9 +93,9 @@
       <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
     </div>
   </div>
-  <div fxFlex="40">
+  <!-- <div fxFlex="40">
     <app-widget-pie [data]="pieChart"></app-widget-pie>
-  </div>
+  </div> -->
 </div>
 
 <br /><br /><br />
