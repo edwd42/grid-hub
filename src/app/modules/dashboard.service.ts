@@ -21,7 +21,7 @@ export class DashboardService {
         data: [163, 203, 276, 408, 547, 729, 628]
       },
       {
-        name: "America",
+        name: "Americas",
         data: [18, 31, 54, 156, 339, 818, 1201]
       },
       {
@@ -38,42 +38,26 @@ export class DashboardService {
   pieChart() {
     return [
       {
-        name: "Chrome",
-        y: 61.41,
+        name: "Asia",
+        y: 59,
         sliced: true,
         selected: true
       },
       {
-        name: "Internet Explorer",
-        y: 11.84
+        name: "Africa",
+        y: 20
       },
       {
-        name: "Firefox",
-        y: 10.85
+        name: "Europe",
+        y: 7
       },
       {
-        name: "Edge",
-        y: 4.67
+        name: "Americas",
+        y: 13
       },
       {
-        name: "Safari",
-        y: 4.18
-      },
-      {
-        name: "Sogou Explorer",
-        y: 1.64
-      },
-      {
-        name: "Opera",
-        y: 1.6
-      },
-      {
-        name: "QQ",
-        y: 1.2
-      },
-      {
-        name: "Other",
-        y: 2.61
+        name: "Oceania",
+        y: 1
       }
     ];
   }

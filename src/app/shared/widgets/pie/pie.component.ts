@@ -23,7 +23,10 @@ export class PieComponent implements OnInit {
         type: "pie"
       },
       title: {
-        text: "Browser market shares in January, 2018"
+        text: "Projected 2050 World Population by Percent"
+      },
+      subtitle: {
+        text: "Source: Wikipedia.org"
       },
       tooltip: {
         pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>"
