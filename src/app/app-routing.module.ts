@@ -5,6 +5,9 @@ import { AboutComponent } from "./modules/about/about.component";
 // import { ChartComponent } from './modules/chart/chart.component';
 import { DashboardComponent } from "./modules/dashboard/dashboard.component";
 import { PageNotFoundComponent } from "./modules/page-not-found/page-not-found.component";
+import { OptimizationComponent } from "./tools/components/optimization/optimization.component";
+import { SimulationComponent } from "./tools/components/simulation/simulation.component";
+import { VisualizationComponent } from "./tools/components/visualization/visualization.component";
 
 const routes: Routes = [
   {
@@ -19,7 +22,9 @@ const routes: Routes = [
         path: "about",
         component: AboutComponent
       },
-      // { path: "simulation", component: SimulationComponent },
+      { path: "visualization", component: VisualizationComponent },
+      { path: "simulation", component: SimulationComponent },
+      { path: "optimization", component: OptimizationComponent },
       { path: "**", component: PageNotFoundComponent }
     ]
   }
