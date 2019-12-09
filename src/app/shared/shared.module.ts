@@ -18,7 +18,7 @@ import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
-import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
+// import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
 import { SimulationComponent } from "./widgets/simulation/simulation.component";
 
 @NgModule({
@@ -29,7 +29,7 @@ import { SimulationComponent } from "./widgets/simulation/simulation.component";
     AreaComponent,
     CardComponent,
     PieComponent,
-    ProvStreetlightsComponent,
+    // ProvStreetlightsComponent,
     SimulationComponent,
     OptimizationComponent
   ],
@@ -52,7 +52,7 @@ import { SimulationComponent } from "./widgets/simulation/simulation.component";
     AreaComponent,
     CardComponent,
     PieComponent,
-    ProvStreetlightsComponent,
+    // ProvStreetlightsComponent,
     SimulationComponent,
     OptimizationComponent
   ]

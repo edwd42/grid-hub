@@ -1,5 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { HighchartsChartModule } from "highcharts-angular";
+// import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
+import { ProvStreetlightsComponent } from "../shared/widgets/prov-streetlights/prov-streetlights.component";
 import { OptimizationComponent } from "./components/optimization/optimization.component";
 import { SimulationComponent } from "./components/simulation/simulation.component";
 import { VisualizationComponent } from "./components/visualization/visualization.component";
@@ -8,9 +11,15 @@ import { VisualizationComponent } from "./components/visualization/visualization
   declarations: [
     VisualizationComponent,
     SimulationComponent,
-    OptimizationComponent
+    OptimizationComponent,
+    ProvStreetlightsComponent
   ],
-  imports: [CommonModule],
-  exports: [VisualizationComponent, SimulationComponent, OptimizationComponent]
+  imports: [CommonModule, HighchartsChartModule],
+  exports: [
+    VisualizationComponent,
+    SimulationComponent,
+    OptimizationComponent,
+    ProvStreetlightsComponent
+  ]
 })
 export class ToolsModule {}
