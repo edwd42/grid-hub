@@ -14,6 +14,7 @@ import { DashboardService } from "src/app/modules/dashboard.service";
 import { DashboardComponent } from "src/app/modules/dashboard/dashboard.component";
 import { PageNotFoundComponent } from "src/app/modules/page-not-found/page-not-found.component";
 import { SharedModule } from "src/app/shared/shared.module";
+import { ToolsModule } from "../../tools/tools.module";
 import { DefaultComponent } from "./default.component";
 
 @NgModule({
@@ -32,7 +33,8 @@ import { DefaultComponent } from "./default.component";
     FlexLayoutModule,
     MatCardModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    ToolsModule
   ],
   providers: [DashboardService]
 })
