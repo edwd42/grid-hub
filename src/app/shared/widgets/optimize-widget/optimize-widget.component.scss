@@ -1,0 +1,24 @@
+.container {
+  text-align: center;
+  align-items: center;
+  width: auto;
+  position: relative;
+  padding: 0 auto;
+  margin: 0 auto;
+  display: flex; /*set display to flex*/
+}
+
+#content {
+  align-self: flex-start;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  padding: 0 10 0 10;
+  margin: 0 auto;
+}
+
+#image {
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+}
