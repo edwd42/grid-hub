@@ -88,7 +88,7 @@ export class ProvStreetlightsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    Highcharts.chart("container", this.chartOptions);
+    Highcharts.chart("prov-streetlights", this.chartOptions);
     HC_exporting(Highcharts);
 
     setTimeout(() => {

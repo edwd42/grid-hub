@@ -122,7 +122,7 @@ export class SimulationComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    Highcharts.chart("container", this.chartOptions);
+    Highcharts.chart("simulation", this.chartOptions);
     HC_exporting(Highcharts);
 
     setTimeout(() => {
