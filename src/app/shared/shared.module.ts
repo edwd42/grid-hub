@@ -16,7 +16,10 @@ import { HeaderComponent } from "./components/header/header.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
+import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
+import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
+import { SimulationComponent } from "./widgets/simulation/simulation.component";
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { PieComponent } from "./widgets/pie/pie.component";
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    ProvStreetlightsComponent,
+    SimulationComponent,
+    OptimizationComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +51,10 @@ import { PieComponent } from "./widgets/pie/pie.component";
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    ProvStreetlightsComponent,
+    SimulationComponent,
+    OptimizationComponent
   ]
 })
 export class SharedModule {}
