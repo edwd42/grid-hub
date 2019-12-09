@@ -32,6 +32,7 @@ import { SimulationComponent } from "./widgets/simulation/simulation.component";
     // ProvStreetlightsComponent,
     SimulationComponent,
     OptimizationComponent
+    // KwhSimComponent
   ],
   imports: [
     CommonModule,

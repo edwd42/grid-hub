@@ -4,9 +4,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { DefaultModule } from "./layouts/default/default.module";
+import { KwhSimComponent } from './kwh-sim/kwh-sim.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, KwhSimComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
