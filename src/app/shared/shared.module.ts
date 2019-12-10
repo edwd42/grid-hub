@@ -18,6 +18,7 @@ import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 // import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
+import { SidebarNavComponent } from './components/sidebar-nav/sidebar-nav.component';
 // import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
 // import { SimulationComponent } from "./widgets/simulation/simulation.component";
 
@@ -28,7 +29,8 @@ import { PieComponent } from "./widgets/pie/pie.component";
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    SidebarNavComponent
     // ProvStreetlightsComponent,
     // SimulationComponent,
     // OptimizationComponent
