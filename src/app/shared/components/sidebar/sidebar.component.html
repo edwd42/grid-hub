@@ -18,23 +18,36 @@
   <mat-divider></mat-divider>
 
   <h2 matSubheader>Tools</h2>
-
-  <a
-    mat-list-item
-    routerLinkActive="list-item-active"
-    routerLink="/visualization"
-    >Visualization</a
-  >
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/simulation"
-    >Simulation</a
-  >
-  <a
-    mat-list-item
-    routerLinkActive="list-item-active"
-    routerLink="/optimization"
-    >Optimization</a
-  >
-
+  <nav class="main-nav">
+    <ul class="main-nav-ul">
+      <li>
+        <a mat-list-item>Visualization<span class="sub-arrow"></span></a>
+        <ul>
+          <li>
+            <a routerLinkActive="list-item-active" routerLink="/visualization"
+              >Streetlights</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a
+          mat-list-item
+          routerLinkActive="list-item-active"
+          routerLink="/simulation"
+          >Simulation</a
+        >
+      </li>
+      <li>
+        <a
+          mat-list-item
+          routerLinkActive="list-item-active"
+          routerLink="/optimization"
+          >Optimization</a
+        >
+      </li>
+    </ul>
+  </nav>
   <mat-divider></mat-divider>
 
   <h2 matSubheader>About Me</h2>
