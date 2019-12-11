@@ -56,6 +56,7 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     // CardComponent,
     PieComponent,
     Plotly144Component
+    // KwhSimComponent
     // ProvStreetlightsComponent,
     // SimulationComponent
     // OptimizationComponent
