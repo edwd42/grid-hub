@@ -26,6 +26,7 @@ const routes: Routes = [
         component: AboutComponent
       },
       { path: "visualization", component: VisualizationComponent },
+      { path: "simulation", component: SimulationComponent },
       { path: "optimization", component: OptimizationComponent },
       { path: "prov-streetlights", component: ProvStreetlightsComponent },
       { path: "plotly144", component: Plotly144Component },
