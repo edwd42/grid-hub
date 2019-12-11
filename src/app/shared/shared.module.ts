@@ -18,6 +18,7 @@ import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 // import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
+import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
 // import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
 // import { SimulationComponent } from "./widgets/simulation/simulation.component";
 
@@ -28,7 +29,8 @@ import { PieComponent } from "./widgets/pie/pie.component";
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    Plotly144Component
     // ProvStreetlightsComponent,
     // SimulationComponent,
     // OptimizationComponent
@@ -53,7 +55,8 @@ import { PieComponent } from "./widgets/pie/pie.component";
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    PieComponent
+    PieComponent,
+    Plotly144Component
     // ProvStreetlightsComponent,
     // SimulationComponent
     // OptimizationComponent
