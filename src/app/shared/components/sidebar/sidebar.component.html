@@ -21,10 +21,17 @@
   <nav class="main-nav">
     <ul class="main-nav-ul">
       <li>
-        <a mat-list-item>Visualization<span class="sub-arrow"></span></a>
+        <a
+          mat-list-item
+          routerLinkActive="list-item-active"
+          routerLink="/visualization"
+          >Visualization<span class="sub-arrow"></span
+        ></a>
         <ul>
           <li>
-            <a routerLinkActive="list-item-active" routerLink="/visualization"
+            <a
+              routerLinkActive="list-item-active"
+              routerLink="/prov-streetlights"
               >Streetlights</a
             >
           </li>
@@ -36,23 +43,24 @@
         </ul>
       </li>
       <li>
-        <a
-          mat-list-item
-          routerLinkActive="list-item-active"
-          routerLink="/simulation"
-          >Simulation</a
-        >
+        <a mat-list-item>Simulation<span class="sub-arrow"></span></a>
+        <ul>
+          <a routerLinkActive="list-item-active" routerLink="/kwh-sim"
+            >Streetlight 50% Simulation</a
+          >
+        </ul>
       </li>
       <li>
-        <a
-          mat-list-item
-          routerLinkActive="list-item-active"
-          routerLink="/optimization"
-          >Optimization</a
-        >
+        <a mat-list-item>Optimization<span class="sub-arrow"></span></a>
+        <ul>
+          <a routerLinkActive="list-item-active" routerLink="/optimize-widget"
+            >Leaflet Heat-map</a
+          >
+        </ul>
       </li>
     </ul>
   </nav>
+  <br /><br />
   <mat-divider></mat-divider>
 
   <h2 matSubheader>About Me</h2>
