@@ -1,6 +1,9 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatCardModule, MatIconModule } from "@angular/material";
 import { HighchartsChartModule } from "highcharts-angular";
+import { CardComponent } from "../shared/widgets/card/card.component";
 import { KwhSimComponent } from "../shared/widgets/kwh-sim/kwh-sim.component";
 import { OptimizeWidgetComponent } from "../shared/widgets/optimize-widget/optimize-widget.component";
 // import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
@@ -16,16 +19,25 @@ import { VisualizationComponent } from "./components/visualization/visualization
     OptimizationComponent,
     ProvStreetlightsComponent,
     KwhSimComponent,
-    OptimizeWidgetComponent
+    OptimizeWidgetComponent,
+    CardComponent
   ],
-  imports: [CommonModule, HighchartsChartModule],
+  imports: [
+    CommonModule,
+    HighchartsChartModule,
+    MatCardModule,
+    FlexLayoutModule,
+    MatIconModule
+  ],
   exports: [
     VisualizationComponent,
     SimulationComponent,
     OptimizationComponent,
     ProvStreetlightsComponent,
     KwhSimComponent,
-    OptimizeWidgetComponent
+    OptimizeWidgetComponent,
+
+    CardComponent
   ]
 })
 export class ToolsModule {}

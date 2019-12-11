@@ -15,7 +15,6 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { AreaComponent } from "./widgets/area/area.component";
-import { CardComponent } from "./widgets/card/card.component";
 // import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
@@ -28,7 +27,7 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    CardComponent,
+    // CardComponent,
     PieComponent,
     Plotly144Component
     // ProvStreetlightsComponent,
@@ -54,7 +53,7 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    CardComponent,
+    // CardComponent,
     PieComponent,
     Plotly144Component
     // ProvStreetlightsComponent,
