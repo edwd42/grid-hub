@@ -3,3 +3,58 @@
   <app-optimize-widget></app-optimize-widget>
 </div> -->
 <p>This is the optimization page.</p>
+
+<p>Please select from the following optimization examples:</p>
+
+<div
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+  fxLayoutGap="20px"
+  class="stats-cards"
+>
+  <mat-card fxFlex="50">
+    <a href="/optimize-widget">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Providence Municipal Buildings Heatmap</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../../assets/img/Heat_Map_Providence.jpg"
+      />
+    </a>
+  </mat-card>
+
+  <mat-card fxFlex="50">
+    <a href="/kwh-sim">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title
+          >Simulation of 50% Streetlight Electricity Usage (kWh)</mat-card-title
+        >
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../../assets/img/SimulationScreenShot.png"
+      />
+    </a>
+  </mat-card>
+
+  <!-- <mat-card fxFlex="25">
+    <app-widget-card
+      label="Users engagement"
+      total="8k"
+      percentage="30"
+      [data]="cards"
+    ></app-widget-card>
+  </mat-card> -->
+
+  <!-- <mat-card fxFlex="25">
+    <app-widget-card
+      label="Referral"
+      total="6k"
+      percentage="20"
+      [data]="cards"
+    ></app-widget-card>
+  </mat-card> -->
+</div>
