@@ -4,6 +4,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {
   MatButtonModule,
   MatDividerModule,
+  MatGridListModule,
   MatIconModule,
   MatListModule,
   MatMenuModule,
@@ -18,8 +19,6 @@ import { AreaComponent } from "./widgets/area/area.component";
 // import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
-// import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
-// import { SimulationComponent } from "./widgets/simulation/simulation.component";
 
 @NgModule({
   declarations: [
@@ -27,9 +26,9 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    // CardComponent,
     PieComponent,
     Plotly144Component
+    // CardComponent,
     // ProvStreetlightsComponent,
     // SimulationComponent,
     // OptimizationComponent
@@ -46,7 +45,8 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatGridListModule
   ],
   exports: [
     HeaderComponent,

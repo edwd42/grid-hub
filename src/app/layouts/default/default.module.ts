@@ -4,6 +4,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {
   MatCardModule,
   MatDividerModule,
+  MatGridListModule,
   MatPaginatorModule,
   MatSidenavModule,
   MatTableModule
@@ -36,6 +37,7 @@ import { DefaultComponent } from "./default.component";
     MatCardModule,
     MatPaginatorModule,
     MatTableModule,
+    MatGridListModule,
     ToolsModule
   ],
   providers: [DashboardService]
