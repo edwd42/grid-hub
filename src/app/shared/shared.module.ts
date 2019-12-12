@@ -15,11 +15,12 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { AreaComponent } from "./widgets/area/area.component";
-// import { OptimizationComponent } from "./widgets/optimization/optimization.component";
+import { CardComponent } from "./widgets/card/card.component";
+import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
+import { OptimizeWidgetComponent } from "./widgets/optimize-widget/optimize-widget.component";
 import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
-// import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
-// import { SimulationComponent } from "./widgets/simulation/simulation.component";
+import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
 
 @NgModule({
   declarations: [
@@ -27,14 +28,12 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    // CardComponent,
     PieComponent,
-    Plotly144Component
-    // ProvStreetlightsComponent,
-    // SimulationComponent,
-    // OptimizationComponent
-    // OptimizeWidgetComponent
-    // KwhSimComponent
+    Plotly144Component,
+    ProvStreetlightsComponent,
+    KwhSimComponent,
+    OptimizeWidgetComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -53,13 +52,12 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    // CardComponent,
     PieComponent,
-    Plotly144Component
-    // KwhSimComponent
-    // ProvStreetlightsComponent,
-    // SimulationComponent
-    // OptimizationComponent
+    Plotly144Component,
+    ProvStreetlightsComponent,
+    KwhSimComponent,
+    OptimizeWidgetComponent,
+    CardComponent
   ]
 })
 export class SharedModule {}
