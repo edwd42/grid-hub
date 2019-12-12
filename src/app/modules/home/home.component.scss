@@ -1,46 +1,17 @@
-.stats-cards {
-  .mat-card a {
-    text-decoration: none;
-    overflow: hidden;
-    display: inline-block;
-    justify-content: center;
-  }
-  .mat-card-title {
-    margin-top: 20px;
-  }
-}
-
-img {
-  height: 0 auto;
-  width: 100%;
-  padding: 0;
-}
-
-h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.total {
-  font-size: 3em;
-}
-
-.mat-icon,
-.description {
-  color: green;
-  font-size: 2em;
-}
-
-.mat-icon {
-  position: relative;
-  padding: 0 20px;
-  top: 5px;
-}
-
 .video-container {
   position: relative;
   height: 100%;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+}
+
+img {
+  height: 300px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.item-1 .item-3 {
+  text-align: right;
 }
