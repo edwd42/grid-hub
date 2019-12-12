@@ -2,8 +2,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { DefaultComponent } from "./layouts/default/default.component";
 import { AboutComponent } from "./modules/about/about.component";
-// import { ChartComponent } from './modules/chart/chart.component';
-import { DashboardComponent } from "./modules/dashboard/dashboard.component";
+import { HomeComponent } from "./modules/home/home.component";
+// import { DashboardComponent } from "./modules/dashboard/dashboard.component";
 import { PageNotFoundComponent } from "./modules/page-not-found/page-not-found.component";
 import { KwhSimComponent } from "./shared/widgets/kwh-sim/kwh-sim.component";
 import { OptimizeWidgetComponent } from "./shared/widgets/optimize-widget/optimize-widget.component";
@@ -20,7 +20,7 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        component: DashboardComponent
+        component: HomeComponent
       },
       {
         path: "about",
