@@ -4,6 +4,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {
   MatButtonModule,
   MatDividerModule,
+  MatGridListModule,
   MatIconModule,
   MatListModule,
   MatMenuModule,
@@ -34,6 +35,8 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     KwhSimComponent,
     OptimizeWidgetComponent,
     CardComponent
+    // SimulationComponent,
+    // OptimizationComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +48,8 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatGridListModule
   ],
   exports: [
     HeaderComponent,

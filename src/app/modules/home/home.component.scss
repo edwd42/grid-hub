@@ -12,6 +12,35 @@ img {
   overflow: hidden;
 }
 
-.item-1 .item-3 {
+.container {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  place-content: align-content justify-content;
+  // align-items: center;
+}
+
+// .item {
+//   display: flex;
+//   flex: 0 0 50%;
+//   position: relative;
+// }
+
+#item-1 #item-3 {
   text-align: right;
+  // align-items: baseline;
+}
+
+#item-2 #item-4 {
+  text-align: left;
+  // align-items: flex-start;
+  vertical-align: top;
+}
+
+#item-1 #item-2 {
+  vertical-align: bottom;
+}
+
+#item-3 #item-4 {
+  vertical-align: top;
 }
