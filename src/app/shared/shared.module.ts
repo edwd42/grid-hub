@@ -22,6 +22,7 @@ import { OptimizeWidgetComponent } from "./widgets/optimize-widget/optimize-widg
 import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
 import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
+import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
 
 @NgModule({
   declarations: [
@@ -31,10 +32,12 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     AreaComponent,
     PieComponent,
     Plotly144Component,
+    Pyplot1Component,
     ProvStreetlightsComponent,
     KwhSimComponent,
     OptimizeWidgetComponent,
-    CardComponent
+    CardComponent,
+    Pyplot1Component
     // SimulationComponent,
     // OptimizationComponent
   ],
@@ -58,6 +61,7 @@ import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-stre
     AreaComponent,
     PieComponent,
     Plotly144Component,
+    Pyplot1Component,
     ProvStreetlightsComponent,
     KwhSimComponent,
     OptimizeWidgetComponent,
