@@ -18,6 +18,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { OptimizationComponent } from "./components/optimization/optimization.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { SimulationComponent } from "./components/simulation/simulation.component";
+import { VisualizationComponent } from "./components/visualization/visualization.component";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
@@ -41,7 +42,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     OptimizeWidgetComponent,
     CardComponent,
     Pyplot1Component,
-    // VisualizationComponent,
+    VisualizationComponent,
     SimulationComponent,
     OptimizationComponent
   ],
@@ -60,7 +61,8 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     HighchartsChartModule,
     MatCardModule,
     FlexLayoutModule,
-    MatIconModule
+    HighchartsChartModule,
+    MatCardModule
   ],
   exports: [
     HeaderComponent,
@@ -74,7 +76,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     KwhSimComponent,
     OptimizeWidgetComponent,
     CardComponent,
-    // VisualizationComponent,
+    VisualizationComponent,
     SimulationComponent,
     OptimizationComponent
   ]
