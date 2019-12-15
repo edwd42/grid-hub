@@ -16,7 +16,6 @@ import { DashboardComponent } from "src/app/modules/dashboard/dashboard.componen
 import { HomeComponent } from "src/app/modules/home/home.component";
 import { PageNotFoundComponent } from "src/app/modules/page-not-found/page-not-found.component";
 import { SharedModule } from "src/app/shared/shared.module";
-import { ToolsModule } from "../../tools/tools.module";
 import { DefaultComponent } from "./default.component";
 
 @NgModule({
@@ -37,8 +36,7 @@ import { DefaultComponent } from "./default.component";
     MatCardModule,
     MatPaginatorModule,
     MatTableModule,
-    MatGridListModule,
-    ToolsModule
+    MatGridListModule
   ],
   providers: [DashboardService]
 })
