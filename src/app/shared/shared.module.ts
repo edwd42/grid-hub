@@ -13,11 +13,9 @@ import {
 } from "@angular/material";
 import { RouterModule } from "@angular/router";
 import { HighchartsChartModule } from "highcharts-angular";
-import { OptimizationComponent } from "../tools/components/optimization/optimization.component";
-import { SimulationComponent } from "../tools/components/simulation/simulation.component";
-import { VisualizationComponent } from "../tools/components/visualization/visualization.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
+import { OptimizationComponent } from "./components/optimization/optimization.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
@@ -42,8 +40,8 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     OptimizeWidgetComponent,
     CardComponent,
     Pyplot1Component,
-    VisualizationComponent,
-    SimulationComponent,
+    // VisualizationComponent,
+    // SimulationComponent,
     OptimizationComponent
   ],
   imports: [
@@ -75,8 +73,8 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     KwhSimComponent,
     OptimizeWidgetComponent,
     CardComponent,
-    VisualizationComponent,
-    SimulationComponent,
+    // VisualizationComponent,
+    // SimulationComponent,
     OptimizationComponent
   ]
 })
