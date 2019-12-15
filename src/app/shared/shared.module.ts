@@ -17,6 +17,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { OptimizationComponent } from "./components/optimization/optimization.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
+import { SimulationComponent } from "./components/simulation/simulation.component";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
@@ -41,7 +42,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     CardComponent,
     Pyplot1Component,
     // VisualizationComponent,
-    // SimulationComponent,
+    SimulationComponent,
     OptimizationComponent
   ],
   imports: [
@@ -74,7 +75,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     OptimizeWidgetComponent,
     CardComponent,
     // VisualizationComponent,
-    // SimulationComponent,
+    SimulationComponent,
     OptimizationComponent
   ]
 })
