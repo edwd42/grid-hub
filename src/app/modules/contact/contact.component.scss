@@ -1,0 +1,25 @@
+ul {
+  list-style: none;
+}
+
+.contact {
+  width: 300px;
+  margin-left: -20px;
+  /* -webkit-box-shadow: 2px 2px 10px 0px #000000; */
+  /* box-shadow: 2px 2px 10px 0px #000000; */
+}
+
+button {
+  font-family: Arial;
+  color: #000000;
+  /* font-size: 16px; */
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+}
+
+button:hover {
+  text-decoration: none;
+  color: blue;
+}

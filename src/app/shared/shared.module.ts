@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RouterModule } from "@angular/router";
 import { HighchartsChartModule } from "highcharts-angular";
+import { ContactComponent } from "../modules/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { OptimizationComponent } from "./components/optimization/optimization.component";
@@ -24,6 +25,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    ContactComponent,
     AreaComponent,
     PieComponent,
     Plotly144Component,
@@ -48,6 +50,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    ContactComponent,
     AreaComponent,
     PieComponent,
     Plotly144Component,
