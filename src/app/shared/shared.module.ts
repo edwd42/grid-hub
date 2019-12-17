@@ -1,16 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatDividerModule,
-  MatGridListModule,
-  MatIconModule,
-  MatListModule,
-  MatMenuModule,
-  MatToolbarModule
-} from "@angular/material";
 import { RouterModule } from "@angular/router";
 import { HighchartsChartModule } from "highcharts-angular";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -48,21 +38,9 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
   ],
   imports: [
     CommonModule,
-    MatDividerModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    FlexLayoutModule,
-    MatMenuModule,
-    MatListModule,
     RouterModule,
-    HighchartsChartModule,
-    MatGridListModule,
-    HighchartsChartModule,
-    MatCardModule,
     FlexLayoutModule,
-    HighchartsChartModule,
-    MatCardModule
+    HighchartsChartModule
   ],
   exports: [
     HeaderComponent,
