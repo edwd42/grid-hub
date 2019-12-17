@@ -9,6 +9,7 @@ import { OptimizationComponent } from "./components/optimization/optimization.co
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { SimulationComponent } from "./components/simulation/simulation.component";
 import { VisualizationComponent } from "./components/visualization/visualization.component";
+import { MaterialModule } from "./material/material.module";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
 import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
@@ -40,6 +41,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     CommonModule,
     RouterModule,
     FlexLayoutModule,
+    MaterialModule,
     HighchartsChartModule
   ],
   exports: [
