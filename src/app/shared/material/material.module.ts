@@ -7,7 +7,8 @@ import {
   MatIconModule,
   MatListModule,
   MatSliderModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTooltipModule
 } from "@angular/material";
 import { MatMenuModule } from "@angular/material/menu";
 
@@ -15,6 +16,7 @@ const MaterialComponents = [
   MatSliderModule,
   MatDividerModule,
   MatToolbarModule,
+  MatTooltipModule,
   MatListModule,
   MatGridListModule,
   MatIconModule,
