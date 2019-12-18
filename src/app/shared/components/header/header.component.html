@@ -1,41 +1,66 @@
 <mat-toolbar color="red">
-    <mat-toolbar-row>
-        <button mat-icon-button (click)="toggleSideBar()" style="color: #696969; background-color:transparent;">
-            <mat-icon>menu</mat-icon>
-        </button>
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      (click)="toggleSideBar()"
+      style="color: #696969; background-color:transparent;"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
 
-        <span id="logo" style="padding-left: 10px; color: #696969">
-            <a routerLink="/">
-                Grid<img src="assets/img/react_logo.png" alt="logo" id="logo-img" wkdth="38" height="38" />Hub</a>
-            <sup style="font-size:medium; color: darkgray">&trade;</sup>
-        </span>
+    <span id="logo" style="padding-left: 10px; color: #696969">
+      <a routerLink="/">
+        Grid<img
+          src="assets/img/react_logo.png"
+          alt="logo"
+          id="logo-img"
+          wkdth="38"
+          height="38"
+        />Hub</a
+      >
+      <sup style="font-size:medium; color: darkgray">&trade;</sup>
+    </span>
 
-        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-            <ul fxLayout="row" fxLayoutGap="20px">
-                <li>
-                    <button mat-icon-button style="color: #696969; background-color:transparent;">
-                        <mat-icon>settings</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <button mat-icon-button style="color: #696969; background-color:transparent;">
-                        <mat-icon>help_outline</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <!-- <button mat-button [matMenuTriggerFor]="menu" style="color: #696969; background-color:transparent;"> -->
-                    <button mat-button [matMenuTriggerFor]="menu">
-                        <mat-icon>person_outline</mat-icon>
-                    </button>
-                    <mat-menu #menu="matMenu">
-                        <button mat-menu-item>
-                            <mat-icon>exit_to_app</mat-icon>
-                            Sign out
-                        </button>
-                    </mat-menu>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="20px">
+        <li>
+          <app-contact></app-contact>
+          <!-- <button
+            mat-icon-button
+            style="color: #696969; background-color:transparent;"
+          >
+            <mat-icon>person_outline</mat-icon>
+          </button> -->
+        </li>
 
-                </li>
-            </ul>
-        </div>
-    </mat-toolbar-row>
+        <li>
+          <button
+            mat-icon-button
+            style="color: #696969; background-color:transparent;"
+          >
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button
+            mat-icon-button
+            style="color: #696969; background-color:transparent;"
+          >
+            <mat-icon>help_outline</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon>exit_to_app</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              Sign out
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>

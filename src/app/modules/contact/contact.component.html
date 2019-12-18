@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<ul fxLayout="row" fxLayoutGap="20px">
+  <li>
+    <button
+      mat-button
+      [matMenuTriggerFor]="menu"
+      style="color: #505050; background-color:transparent;"
+    >
+      <mat-icon>person_outline</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item style="padding-left: 10px; padding-right: 10px;">
+        <mat-icon>contact_phone</mat-icon>
+        <span>(401) 497-6933</span>
+      </button>
+      <button mat-menu-item style="padding-left: 10px; padding-right: 10px;">
+        <mat-icon>email</mat-icon>
+        <span
+          ><a href="mailto:edward.dupre@edwd42.com"
+            >edward.dupre@edwd42.com</a
+          ></span
+        >
+      </button>
+    </mat-menu>
+  </li>
+</ul>
+
+<!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+  <mat-icon>contacts</mat-icon>
+  <app-contact></app-contact>
+</a>
+
+<a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+  <mat-icon>contact_phone</mat-icon>
+  Resume
+</a> -->
