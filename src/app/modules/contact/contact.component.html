@@ -1,25 +1,71 @@
-<ul fxLayout="row" fxLayoutGap="20px">
+<ul fxLayout="row">
   <li>
     <button
       mat-button
-      [matMenuTriggerFor]="menu"
+      [matMenuTriggerFor]="beforeMenu"
       style="color: #505050; background-color:transparent;"
     >
       <mat-icon>person_outline</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item style="padding-left: 10px; padding-right: 10px;">
-        <mat-icon>contact_phone</mat-icon>
-        <span>(401) 497-6933</span>
-      </button>
-      <button mat-menu-item style="padding-left: 10px; padding-right: 10px;">
-        <mat-icon>email</mat-icon>
-        <span
-          ><a href="mailto:edward.dupre@edwd42.com"
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <li style="padding-left: 10px; padding-right: 10px;">
+        <fa-icon
+          [icon]="['fas', 'phone-alt']"
+          style="padding-left: 1px; padding-right: 11px;"
+        ></fa-icon>
+        <span style="padding-left: 1px;">(401) 497-6933</span>
+      </li>
+      <li style="padding-left: 10px; padding-right: 10px;">
+        <fa-icon
+          [icon]="['fas', 'at']"
+          style="padding-left: 1px; padding-right: 10px;"
+        ></fa-icon>
+        <span style="padding-left: 2px; padding-right: 4px;"
+          ><a href="mailto:edward.dupre@edwd42.com?subject=Reaching out to you"
             >edward.dupre@edwd42.com</a
           ></span
         >
-      </button>
+      </li>
+      <li>
+        <fa-icon
+          [icon]="['fab', 'twitter']"
+          style="padding-left: 10px; padding-right: 10px;"
+        ></fa-icon>
+        <span><a href="https://twitter.com/edwd42"> twitter: @edwd42</a></span>
+      </li>
+      <li>
+        <fa-icon
+          [icon]="['fab', 'github']"
+          style="padding-left: 10px; padding-right: 10px;"
+        ></fa-icon>
+        <span style="padding-left: 0px;"
+          ><a href="https://github.com/edwd42">
+            github.com/edwd42
+          </a>
+        </span>
+      </li>
+      <li>
+        <fa-icon
+          [icon]="['fab', 'linkedin']"
+          style="padding-left: 11px; padding-right: 9px;"
+        ></fa-icon>
+        <span style="padding-left: 3px;">
+          <a href="https://www.linkedin.com/in/edwd42">
+            linkedin.com/edwd42
+          </a></span
+        >
+      </li>
+      <li style="padding-left: 10px; padding-right: 10px;">
+        <fa-icon
+          [icon]="['fas', 'globe']"
+          style="padding-left: -1px; padding-right: 10px;"
+        ></fa-icon>
+        <span style="padding-left: 0px;">
+          <a href="https://edwd42.com">
+            web: edwd42.com
+          </a></span
+        >
+      </li>
     </mat-menu>
   </li>
 </ul>

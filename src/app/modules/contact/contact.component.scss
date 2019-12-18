@@ -1,10 +1,23 @@
-ul {
+// :host {
+//   padding: 20px;
+//   background-color: darkgrey;
+// }
+
+ul li {
   list-style: none;
 }
 
+ul li a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .contact {
-  width: 300px;
-  margin-left: -20px;
+  width: 340px;
+  margin-left: -40px;
   /* -webkit-box-shadow: 2px 2px 10px 0px #000000; */
   /* box-shadow: 2px 2px 10px 0px #000000; */
 }

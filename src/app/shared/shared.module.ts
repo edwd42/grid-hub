@@ -2,6 +2,16 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RouterModule } from "@angular/router";
+import {
+  FaIconLibrary,
+  FontAwesomeModule
+} from "@fortawesome/angular-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
+import { faAt, faGlobe, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { HighchartsChartModule } from "highcharts-angular";
 import { ContactComponent } from "../modules/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -10,6 +20,7 @@ import { OptimizationComponent } from "./components/optimization/optimization.co
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { SimulationComponent } from "./components/simulation/simulation.component";
 import { VisualizationComponent } from "./components/visualization/visualization.component";
+import { ExternalLinkDirective } from "./external-link.directive";
 import { MaterialModule } from "./material/material.module";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
@@ -22,6 +33,7 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
 
 @NgModule({
   declarations: [
+    ExternalLinkDirective,
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
@@ -44,9 +56,11 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     RouterModule,
     FlexLayoutModule,
     MaterialModule,
+    FontAwesomeModule,
     HighchartsChartModule
   ],
   exports: [
+    ExternalLinkDirective,
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
@@ -64,4 +78,14 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     OptimizationComponent
   ]
 })
-export class SharedModule {}
+export class SharedModule {
+  constructor(library: FaIconLibrary) {
+    // Add an icon to the library for convenient access in other components
+    library.addIcons(faPhoneAlt);
+    library.addIcons(faAt);
+    library.addIcons(faTwitter);
+    library.addIcons(faGithub);
+    library.addIcons(faLinkedin);
+    library.addIcons(faGlobe);
+  }
+}

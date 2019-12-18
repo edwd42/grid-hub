@@ -6,10 +6,10 @@ import {
   MatGridListModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule,
   MatSliderModule,
   MatToolbarModule
 } from "@angular/material";
+import { MatMenuModule } from "@angular/material/menu";
 
 const MaterialComponents = [
   MatSliderModule,
