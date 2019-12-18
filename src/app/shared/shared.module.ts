@@ -11,7 +11,15 @@ import {
   faLinkedin,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import { faAt, faGlobe, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAt,
+  faFile,
+  faFileAlt,
+  faGlobe,
+  faPhoneAlt,
+  faUser,
+  faUserAlt
+} from "@fortawesome/free-solid-svg-icons";
 import { HighchartsChartModule } from "highcharts-angular";
 import { ContactComponent } from "../modules/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -87,5 +95,9 @@ export class SharedModule {
     library.addIcons(faGithub);
     library.addIcons(faLinkedin);
     library.addIcons(faGlobe);
+    library.addIcons(faFile);
+    library.addIcons(faFileAlt);
+    library.addIcons(faUser);
+    library.addIcons(faUserAlt);
   }
 }

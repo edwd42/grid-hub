@@ -1,4 +1,4 @@
-<mat-toolbar color="red">
+<mat-toolbar>
   <mat-toolbar-row>
     <button
       mat-icon-button
@@ -21,20 +21,37 @@
       <sup style="font-size:medium; color: darkgray">&trade;</sup>
     </span>
 
-    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-      <ul fxLayout="row" fxLayoutGap="20px">
+    <div
+      fxFlex
+      fxLayout="row"
+      fxLayoutAlign="flex-end"
+      style="padding-right: 30px;"
+    >
+      <ul fxLayout="row" fxLayoutGap="10px">
         <li>
           <app-contact></app-contact>
         </li>
 
-        <!-- <li>
+        <li>
           <button
             mat-icon-button
+            matTooltip="My Resume"
+            matTooltipPosition="left"
+            aria-label="Icon that displays a tooltip"
             style="color: #696969; background-color:transparent;"
           >
-            <mat-icon>settings</mat-icon>
+            <span
+              ><a
+                href="https://docs.google.com/document/d/1ABynBLm2UZCzIPSStE4T9JzGftgF91JF7jp-Je6y2PA/edit?usp=sharing"
+              >
+                <span style="font-size: 20px; background-color:transparent;">
+                  <fa-icon
+                    [icon]="['fas', 'file-alt']"
+                    style="padding-left: 1px; padding-right: 10px;"
+                  ></fa-icon></span></a
+            ></span>
           </button>
-        </li> -->
+        </li>
         <!-- <li>
           <button
             mat-icon-button

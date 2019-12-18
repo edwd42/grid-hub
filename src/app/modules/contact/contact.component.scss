@@ -15,24 +15,34 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+#email a {
+  color: black;
+  text-decoration: none;
+}
+#email a:hover {
+  color: red;
+}
+
+#phone a {
+  color: black;
+  text-decoration: none;
+}
+#phone a:hover {
+  color: red;
+}
+
+i:hover {
+  color: red;
+}
+
 .contact {
-  width: 340px;
-  margin-left: -40px;
-  /* -webkit-box-shadow: 2px 2px 10px 0px #000000; */
-  /* box-shadow: 2px 2px 10px 0px #000000; */
-}
-
-button {
-  font-family: Arial;
-  color: #000000;
-  /* font-size: 16px; */
-  padding: 0;
-  text-decoration: none;
-  border: none;
-  background-color: #fff;
-}
-
-button:hover {
-  text-decoration: none;
-  color: blue;
+  padding: 2px 0px 2px 0px;
 }

@@ -1,42 +1,49 @@
 <ul fxLayout="row">
   <li>
     <button
-      mat-button
+      mat-icon-button
       [matMenuTriggerFor]="beforeMenu"
       matTooltip="Contact Me"
       matTooltipPosition="left"
       aria-label="Icon that displays a tooltip"
-      style="color: #505050; background-color:transparent;"
+      style="background-color:transparent;"
     >
-      <mat-icon>person_outline</mat-icon>
+      <span id="contactMe" style="font-size: 20px;color: darkgray;">
+        <i>
+          <fa-icon
+            [icon]="['fas', 'user']"
+            style="padding-left: 1px; padding-right: 11px;"
+          ></fa-icon
+        ></i>
+      </span>
     </button>
     <mat-menu #beforeMenu="matMenu" xPosition="before">
-      <li style="padding-left: 10px; padding-right: 10px;">
+      <li class="contact" style="padding-left: 10px; padding-right: 10px;">
         <fa-icon
           [icon]="['fas', 'phone-alt']"
           style="padding-left: 1px; padding-right: 11px;"
         ></fa-icon>
-        <span style="padding-left: 1px;">(401) 497-6933</span>
+        <span id="phone" style="padding-left: 1px;"><a>(401) 497-6933</a></span>
       </li>
-      <li style="padding-left: 10px; padding-right: 10px;">
+      <li class="contact" style="padding-left: 10px; padding-right: 10px;">
         <fa-icon
           [icon]="['fas', 'at']"
           style="padding-left: 1px; padding-right: 10px;"
         ></fa-icon>
-        <span style="padding-left: 2px; padding-right: 4px;"
+        <span id="email" style="padding-left: 2px; padding-right: 4px;"
           ><a href="mailto:edward.dupre@edwd42.com?subject=Reaching out to you"
             >edward.dupre@edwd42.com</a
           ></span
         >
       </li>
-      <li>
+      <li class="contact">
         <fa-icon
           [icon]="['fab', 'twitter']"
           style="padding-left: 10px; padding-right: 10px;"
         ></fa-icon>
         <span><a href="https://twitter.com/edwd42"> twitter: @edwd42</a></span>
       </li>
-      <li>
+      <li class="contact">
         <fa-icon
           [icon]="['fab', 'github']"
           style="padding-left: 10px; padding-right: 10px;"
@@ -47,7 +54,7 @@
           </a>
         </span>
       </li>
-      <li>
+      <li class="contact">
         <fa-icon
           [icon]="['fab', 'linkedin']"
           style="padding-left: 11px; padding-right: 9px;"
@@ -58,7 +65,7 @@
           </a></span
         >
       </li>
-      <li style="padding-left: 10px; padding-right: 10px;">
+      <li class="contact" style="padding-left: 10px; padding-right: 10px;">
         <fa-icon
           [icon]="['fas', 'globe']"
           style="padding-left: -1px; padding-right: 10px;"
