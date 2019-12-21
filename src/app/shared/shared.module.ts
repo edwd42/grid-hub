@@ -1,20 +1,14 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import {
-  MatButtonModule,
-  MatDividerModule,
-  MatIconModule,
-  MatListModule,
-  MatMenuModule,
-  MatToolbarModule
-} from "@angular/material";
+import { MatButtonModule, MatDividerModule, MatIconModule, MatListModule, MatMenuModule, MatToolbarModule } from "@angular/material";
 import { RouterModule } from "@angular/router";
 import { HighchartsChartModule } from "highcharts-angular";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { AreaComponent } from "./widgets/area/area.component";
+import { LeafletLayersComponent } from './widgets/leaflet-layers/leaflet-layers.component';
 // import { OptimizationComponent } from "./widgets/optimization/optimization.component";
 import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
@@ -29,7 +23,8 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     AreaComponent,
     // CardComponent,
     PieComponent,
-    Plotly144Component
+    Plotly144Component,
+    LeafletLayersComponent
     // ProvStreetlightsComponent,
     // SimulationComponent,
     // OptimizationComponent
@@ -55,7 +50,8 @@ import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
     AreaComponent,
     // CardComponent,
     PieComponent,
-    Plotly144Component
+    Plotly144Component,
+    LeafletLayersComponent
     // KwhSimComponent
     // ProvStreetlightsComponent,
     // SimulationComponent

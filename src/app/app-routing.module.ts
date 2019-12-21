@@ -6,6 +6,7 @@ import { AboutComponent } from "./modules/about/about.component";
 import { DashboardComponent } from "./modules/dashboard/dashboard.component";
 import { PageNotFoundComponent } from "./modules/page-not-found/page-not-found.component";
 import { KwhSimComponent } from "./shared/widgets/kwh-sim/kwh-sim.component";
+import { LeafletLayersComponent } from "./shared/widgets/leaflet-layers/leaflet-layers.component";
 import { OptimizeWidgetComponent } from "./shared/widgets/optimize-widget/optimize-widget.component";
 import { Plotly144Component } from "./shared/widgets/plotly144/plotly144.component";
 import { ProvStreetlightsComponent } from "./shared/widgets/prov-streetlights/prov-streetlights.component";
@@ -33,7 +34,7 @@ const routes: Routes = [
       { path: "plotly144", component: Plotly144Component },
       { path: "kwh-sim", component: KwhSimComponent },
       { path: "optimize-widget", component: OptimizeWidgetComponent },
-
+      { path: "app-leaflet-layers", component: LeafletLayersComponent },
       { path: "**", component: PageNotFoundComponent }
     ]
   }
