@@ -1,6 +1,6 @@
 <!-- <mat-divider [vertical]="true"> -->
 <mat-nav-list>
-  <div class="profile-card">
+  <!-- <div class="profile-card">
     <div class="header">
       <h2>Edward Dupre</h2>
       <h4>edward.dupre@edwd42.com</h4>
@@ -9,7 +9,7 @@
       src="https://material.angular.io/assets/img/examples/shiba2.jpg"
       alt="Edward Dupre"
     />
-  </div>
+  </div> -->
 
   <mat-divider></mat-divider>
 
@@ -40,6 +40,11 @@
               >Plotly Chart</a
             >
           </li>
+          <li>
+            <a routerLinkActive="list-item-active" routerLink="/pyplot1"
+              >Pyplot Chart</a
+            >
+          </li>
         </ul>
       </li>
       <li>
@@ -63,9 +68,16 @@
           >Optimization<span class="sub-arrow"></span
         ></a>
         <ul>
-          <a routerLinkActive="list-item-active" routerLink="/optimize-widget"
-            >Leaflet Heat-map</a
-          >
+          <li>
+            <a routerLinkActive="list-item-active" routerLink="/optimize-widget"
+              >Leaflet Heatmap</a
+            >
+          </li>
+          <li>
+            <a routerLinkActive="list-item-active" routerLink="/leaflet-layers"
+              >Leaflet Layers</a
+            >
+          </li>
         </ul>
       </li>
     </ul>
@@ -73,16 +85,16 @@
   <br /><br />
   <mat-divider></mat-divider>
 
-  <h2 matSubheader>About Me</h2>
+  <!-- <h2 matSubheader>About Me</h2>
 
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
     <mat-icon>import_contacts</mat-icon>
-    Contact
+    <app-contact></app-contact>
   </a>
 
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
     <mat-icon>contact_phone</mat-icon>
     Resume
-  </a>
+  </a> -->
 </mat-nav-list>
 <!-- </mat-divider> -->

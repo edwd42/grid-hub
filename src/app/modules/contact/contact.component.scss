@@ -1,0 +1,48 @@
+// :host {
+//   padding: 20px;
+//   background-color: darkgrey;
+// }
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+#email a {
+  color: black;
+  text-decoration: none;
+}
+#email a:hover {
+  color: red;
+}
+
+#phone a {
+  color: black;
+  text-decoration: none;
+}
+#phone a:hover {
+  color: red;
+}
+
+i:hover {
+  color: red;
+}
+
+.contact {
+  padding: 2px 0px 2px 0px;
+}
