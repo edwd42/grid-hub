@@ -31,6 +31,7 @@ import { VisualizationComponent } from "./components/visualization/visualization
 import { ExternalLinkDirective } from "./external-link.directive";
 import { MaterialModule } from "./material/material.module";
 import { AreaComponent } from "./widgets/area/area.component";
+import { CardComponent } from "./widgets/card/card.component";
 import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
 import { LeafletLayersComponent } from "./widgets/leaflet-layers/leaflet-layers.component";
 import { OptimizeWidgetComponent } from "./widgets/optimize-widget/optimize-widget.component";
@@ -56,7 +57,8 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     SimulationComponent,
     OptimizationComponent,
     KwhSimComponent,
-    OptimizeWidgetComponent
+    OptimizeWidgetComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -82,7 +84,8 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     ProvStreetlightsComponent,
     SimulationComponent,
     OptimizationComponent,
-    OptimizeWidgetComponent
+    OptimizeWidgetComponent,
+    CardComponent
   ]
 })
 export class SharedModule {
