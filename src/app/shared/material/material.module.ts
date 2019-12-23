@@ -1,3 +1,4 @@
+import { ScrollingModule } from "@angular/cdk/scrolling";
 import { NgModule } from "@angular/core";
 import {
   MatButtonModule,
@@ -22,7 +23,8 @@ const MaterialComponents = [
   MatIconModule,
   MatButtonModule,
   MatMenuModule,
-  MatCardModule
+  MatCardModule,
+  ScrollingModule
 ];
 
 @NgModule({
