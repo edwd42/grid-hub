@@ -39,6 +39,7 @@ import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
 import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
 import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
+import { SurfacePlotComponent } from './widgets/surface-plot/surface-plot.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
     OptimizationComponent,
     KwhSimComponent,
     OptimizeWidgetComponent,
-    CardComponent
+    CardComponent,
+    SurfacePlotComponent
   ],
   imports: [
     CommonModule,
