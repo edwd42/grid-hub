@@ -25,6 +25,7 @@ import { ContactComponent } from "../modules/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { OptimizationComponent } from "./components/optimization/optimization.component";
+import { SidebarNavComponent } from "./components/sidebar-nav/sidebar-nav.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { SimulationComponent } from "./components/simulation/simulation.component";
 import { VisualizationComponent } from "./components/visualization/visualization.component";
@@ -47,6 +48,7 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    SidebarNavComponent,
     ContactComponent,
     AreaComponent,
     PieComponent,
@@ -75,6 +77,7 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    SidebarNavComponent,
     ContactComponent,
     AreaComponent,
     PieComponent,
