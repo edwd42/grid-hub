@@ -1,39 +1,35 @@
 :host {
-    background-color: #efefef;
-    color: #fff;
+  background-color: #efefef;
+  color: #fff;
 }
 
 header {
-    padding: 10px;
-    background-color: #dcdcdc;
-  }
-  
-  #logo {
-    font-size: 32px;
-    font-weight: bold;
-    padding-top: 10px;
-  }
-  
-  #logo-img {
-    vertical-align: middle;
-    padding-bottom: 9px;
-  }
+  padding: 10px;
+  background-color: #dcdcdc;
+}
+
+#logo {
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#logo-img {
+  vertical-align: middle;
+  padding-bottom: 9px;
+}
 
 ul li {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
+  list-style: none;
 }
-a:link, a:visited {
-    color: darkgray;
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: darkgray;
 }
 a:hover {
-    color: red;
+  color: red;
 }
-
-//   .mat-toolbar.mat-primary {
-//     background: #007bff;
-//     color: #fff;
-//   }

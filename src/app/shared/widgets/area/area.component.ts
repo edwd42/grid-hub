@@ -21,13 +21,23 @@ export class AreaComponent implements OnInit {
         type: "area"
       },
       title: {
-        text: "Historic and Estimated Worldwide Population Growth by Region"
+        text: "Providence, RI Municipal Electric, Oil, and Gas Usage"
       },
       subtitle: {
-        text: "Source: Wikipedia.org"
+        text: "source: Providence Open Data Portal"
       },
       xAxis: {
-        categories: ["1750", "1800", "1850", "1900", "1950", "1999", "2050"],
+        categories: [
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018"
+        ],
         tickmarkPlacement: "on",
         title: {
           enabled: false
@@ -35,7 +45,7 @@ export class AreaComponent implements OnInit {
       },
       yAxis: {
         title: {
-          text: "Billions"
+          text: "MMbtu"
         },
         labels: {
           formatter() {
@@ -45,7 +55,7 @@ export class AreaComponent implements OnInit {
       },
       tooltip: {
         split: true,
-        valueSuffix: " millions",
+        valueSuffix: "  MMbtu",
         borderRadius: 6
       },
       plotOptions: {

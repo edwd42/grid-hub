@@ -122,7 +122,7 @@ export class KwhSimComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    Highcharts.chart("simulation", this.chartOptions);
+    Highcharts.chart("kwh-sim", this.chartOptions);
     HC_exporting(Highcharts);
 
     setTimeout(() => {

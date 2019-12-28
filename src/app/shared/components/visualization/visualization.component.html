@@ -1,0 +1,56 @@
+<h1 style="text-align: center;">Visualization</h1>
+<!-- <div id="prov-streetlights" style="width: 100%; height: 600px; display: block;">
+  <app-widget-prov-streetlights></app-widget-prov-streetlights>
+</div> -->
+<p>Please select from the following visualization examples:</p>
+
+<div
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+  fxLayoutGap="20px"
+  class="stats-cards"
+>
+  <mat-card fxFlex="50">
+    <a href="/prov-streetlights">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Providence Monthly Streetlight Usage</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../../assets/img/ProvidenceMonthlyStreetlightsElectricityUsageScreenShot.png"
+      />
+    </a>
+  </mat-card>
+
+  <mat-card fxFlex="50">
+    <a href="/optimize-widget">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Providence Municipal Buildings Heatmap</mat-card-title>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="../../../../assets/img/Heat_Map_Providence.png"
+      />
+    </a>
+  </mat-card>
+
+  <!-- <mat-card fxFlex="25">
+    <app-widget-card
+      label="Users engagement"
+      total="8k"
+      percentage="30"
+      [data]="cards"
+    ></app-widget-card>
+  </mat-card> -->
+
+  <!-- <mat-card fxFlex="25">
+    <app-widget-card
+      label="Referral"
+      total="6k"
+      percentage="20"
+      [data]="cards"
+    ></app-widget-card>
+  </mat-card> -->
+</div>
