@@ -61,6 +61,22 @@ export class DashboardService {
     return [71, 78, 39, 66];
   }
 
+  solar() {
+    return [0.26, 0.43, 1.09, 1.44];
+  }
+
+  bicycleMiles() {
+    return [9.4, 12.4, 12.9, 14.6];
+  }
+
+  recycling() {
+    return [5187, 4863, 6893, 9310];
+  }
+
+  trees() {
+    return [652, 579, 538, 808, 648];
+  }
+
   pieChart() {
     return [
       {

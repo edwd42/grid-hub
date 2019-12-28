@@ -55,6 +55,10 @@ const WORLD_POPULATION_DATA: WorldPopulation[] = [
 export class DashboardComponent implements OnInit {
   bigChart = [];
   cards = [];
+  solar = [];
+  bicycleMiles = [];
+  recycling = [];
+  trees = [];
   pieChart = [];
   provStreetlights = [];
 
@@ -75,6 +79,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.bigChart = this.dashboardService.bigChart();
     this.cards = this.dashboardService.cards();
+    this.solar = this.dashboardService.solar();
+    this.bicycleMiles = this.dashboardService.bicycleMiles();
+    this.recycling = this.dashboardService.recycling();
+    this.trees = this.dashboardService.trees();
     this.pieChart = this.dashboardService.pieChart();
     this.provStreetlights = this.dashboardService.provStreetlights();
 
