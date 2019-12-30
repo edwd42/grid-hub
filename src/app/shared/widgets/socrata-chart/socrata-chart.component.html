@@ -1,1 +1,22 @@
-<p>socrata-chart works!</p>
+<div>
+  <h1 style="text-align: center;">
+    Embedded Socrata Chart
+  </h1>
+  <p>
+    Hello! This page is a chart I made on the Providence Open Data Portal. It is
+    a Socrata chart loaded in an iframe. I can't believe how incredibly easy it
+    is to embed a chart into an Angular app. I've got to do more of these! Stay
+    tuned, and come back soon!
+    <br />
+    Please note: if this page appears blank, it is because Socrata.com requies
+    an app token and is expired.
+  </p>
+  <div id="content" class="flex-container" flexLayout="row">
+    <iframe
+      src="https://data.providenceri.gov/dataset/Providence-Municipal-Energy-Use-MMbtu-/k62a-z4dc/embed?width=800&height=600"
+      width="100%"
+      height="600"
+      style="border:0; padding: 0; margin: 0;"
+    ></iframe>
+  </div>
+</div>
