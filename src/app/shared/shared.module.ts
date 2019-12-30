@@ -40,6 +40,7 @@ import { PieComponent } from "./widgets/pie/pie.component";
 import { Plotly144Component } from "./widgets/plotly144/plotly144.component";
 import { ProvStreetlightsComponent } from "./widgets/prov-streetlights/prov-streetlights.component";
 import { Pyplot1Component } from "./widgets/pyplot1/pyplot1.component";
+import { SocrataChartComponent } from "./widgets/socrata-chart/socrata-chart.component";
 import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.component";
 
 @NgModule({
@@ -62,7 +63,8 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     KwhSimComponent,
     OptimizeWidgetComponent,
     CardComponent,
-    SurfacePlotComponent
+    SurfacePlotComponent,
+    SocrataChartComponent
   ],
   imports: [
     CommonModule,
@@ -90,7 +92,8 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     SimulationComponent,
     OptimizationComponent,
     OptimizeWidgetComponent,
-    CardComponent
+    CardComponent,
+    SocrataChartComponent
   ]
 })
 export class SharedModule {

@@ -13,6 +13,7 @@ import { OptimizeWidgetComponent } from "./shared/widgets/optimize-widget/optimi
 import { Plotly144Component } from "./shared/widgets/plotly144/plotly144.component";
 import { ProvStreetlightsComponent } from "./shared/widgets/prov-streetlights/prov-streetlights.component";
 import { Pyplot1Component } from "./shared/widgets/pyplot1/pyplot1.component";
+import { SocrataChartComponent } from "./shared/widgets/socrata-chart/socrata-chart.component";
 
 const routes: Routes = [
   {
@@ -33,6 +34,7 @@ const routes: Routes = [
       { path: "prov-streetlights", component: ProvStreetlightsComponent },
       { path: "plotly144", component: Plotly144Component },
       { path: "pyplot1", component: Pyplot1Component },
+      { path: "socrata-chart", component: SocrataChartComponent },
       { path: "kwh-sim", component: KwhSimComponent },
       { path: "optimize-widget", component: OptimizeWidgetComponent },
       { path: "leaflet-layers", component: LeafletLayersComponent },
