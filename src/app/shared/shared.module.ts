@@ -33,6 +33,7 @@ import { ExternalLinkDirective } from "./external-link.directive";
 import { MaterialModule } from "./material/material.module";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
+import { EiaComponent } from "./widgets/eia/eia.component";
 import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
 import { LeafletLayersComponent } from "./widgets/leaflet-layers/leaflet-layers.component";
 import { OptimizeWidgetComponent } from "./widgets/optimize-widget/optimize-widget.component";
@@ -64,7 +65,8 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     OptimizeWidgetComponent,
     CardComponent,
     SurfacePlotComponent,
-    SocrataChartComponent
+    SocrataChartComponent,
+    EiaComponent
   ],
   imports: [
     CommonModule,
@@ -93,7 +95,8 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     OptimizationComponent,
     OptimizeWidgetComponent,
     CardComponent,
-    SocrataChartComponent
+    SocrataChartComponent,
+    EiaComponent
   ]
 })
 export class SharedModule {
