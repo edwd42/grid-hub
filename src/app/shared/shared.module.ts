@@ -2,24 +2,9 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RouterModule } from "@angular/router";
-import {
-  FaIconLibrary,
-  FontAwesomeModule
-} from "@fortawesome/angular-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faAt,
-  faFile,
-  faFileAlt,
-  faGlobe,
-  faPhoneAlt,
-  faUser,
-  faUserAlt
-} from "@fortawesome/free-solid-svg-icons";
+import { FaIconLibrary, FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faAt, faFile, faFileAlt, faGlobe, faPhoneAlt, faUser, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { HighchartsChartModule } from "highcharts-angular";
 import { ContactComponent } from "../modules/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -33,6 +18,7 @@ import { ExternalLinkDirective } from "./external-link.directive";
 import { MaterialModule } from "./material/material.module";
 import { AreaComponent } from "./widgets/area/area.component";
 import { CardComponent } from "./widgets/card/card.component";
+import { EiaComponent } from './widgets/eia/eia.component';
 import { KwhSimComponent } from "./widgets/kwh-sim/kwh-sim.component";
 import { LeafletLayersComponent } from "./widgets/leaflet-layers/leaflet-layers.component";
 import { OptimizeWidgetComponent } from "./widgets/optimize-widget/optimize-widget.component";
@@ -62,7 +48,8 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     KwhSimComponent,
     OptimizeWidgetComponent,
     CardComponent,
-    SurfacePlotComponent
+    SurfacePlotComponent,
+    EiaComponent
   ],
   imports: [
     CommonModule,
@@ -90,7 +77,8 @@ import { SurfacePlotComponent } from "./widgets/surface-plot/surface-plot.compon
     SimulationComponent,
     OptimizationComponent,
     OptimizeWidgetComponent,
-    CardComponent
+    CardComponent,
+    EiaComponent
   ]
 })
 export class SharedModule {
