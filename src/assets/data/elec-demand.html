@@ -1,0 +1,43 @@
+<div id="gauge" class="demand-gauge"></div>
+<script
+  type="text/javascript"
+  src="https://www.gstatic.com/charts/loader.js"
+></script>
+<script>
+  google.charts.load("current", { packages: ["gauge"] });
+  google.charts.setOnLoadCallback(drawGaugeChart);
+
+  function drawGaugeChart() {
+    const api =
+      "https://api.eia.gov/series/?api_key=fa3e15d4b9f8fc2369d691db34848bc4&series_id=EBA.NE-ALL.D.HL";
+    fetch(api)
+      .then(response => response.json())
+      .then(res => {
+        let dataGauge = google.visualization.arrayToDataTable([
+          ["Label", "Value"],
+          ["Mwh", res.series[0].data[0][1]]
+        ]);
+
+        var optionsGauge = {
+          min: 0,
+          max: 30000,
+          width: 160,
+          height: 148,
+          greenFrom: 10000,
+          greenTo: 20000,
+          yellowFrom: 20000,
+          yellowTo: 25000,
+          redFrom: 25000,
+          redTo: 30000,
+          minorTicks: 5,
+          chartArea: { width: "50%", height: "50%" }
+        };
+
+        var chartGauge = new google.visualization.Gauge(
+          document.getElementById("gauge")
+        );
+
+        chartGauge.draw(dataGauge, optionsGauge);
+      });
+  }
+</script>

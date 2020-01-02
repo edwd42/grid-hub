@@ -1,23 +1,38 @@
 <h1 style="text-align: center;">
   GridHub<sup style="font-size:medium;">&trade;</sup> Dashboard
 </h1>
-<!--
-<div id="prov-streetlights" style="width: 100%; height: 600px; display: block;">
-  <app-widget-prov-streetlights
-    [data]="provStreetlights"
-  ></app-widget-prov-streetlights>
-</div> -->
+<div
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+  fxLayoutGap="20px"
+  class="demand-container"
+>
+  <mat-card fxFlex="25" class="demand-gauge">
+    <a
+      href="https://api.eia.gov/series/?api_key=fa3e15d4b9f8fc2369d691db34848bc4&series_id=EBA.NE-ALL.D.HL"
+      >Current Demand
+      <iframe
+        src="assets/data/elec-demand.html"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        scrolling="no"
+      ></iframe>
+      <span>Updates Hourly</span>
+    </a>
+  </mat-card>
 
-<!-- <br /><mat-divider></mat-divider><br /> -->
-
-<!-- <h1 style="text-align: center;">Simulation</h1>
-<div id="simulation" style="width: 100%; height: 600px; display: block;">
-  <app-widget-simulation [data]="provStreetlights"></app-widget-simulation>
+  <mat-card fxFlex="75" class="demand-cards">
+    <a href="https://www.eia.gov/dashboard/newengland/electricity">
+      <iframe
+        id="eia_widget"
+        style="width:100%;height:206px"
+        src="https://www.eia.gov/opendata/embed/iframe.php?series_id=EBA.NE-ALL.D.HL&periods=10&analysis=none"
+        load="iframe_load"
+      ></iframe>
+    </a>
+  </mat-card>
 </div>
-
-<br /><mat-divider></mat-divider><br /> -->
-
-<!-- <app-widget-optimization></app-widget-optimization> -->
 
 <!-- <br /><mat-divider></mat-divider><br /> -->
 
