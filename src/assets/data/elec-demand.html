@@ -1,3 +1,5 @@
+<script type="application/javascript" src="config.js"></script>
+
 <div id="gauge" class="demand-gauge"></div>
 <script
   type="text/javascript"
@@ -7,13 +9,17 @@
   google.charts.load("current", { packages: ["gauge"] });
   google.charts.setOnLoadCallback(drawGaugeChart);
 
+  const apiKey = config.EIAKEY;
+
   setInterval(() => {
     drawGaugeChart();
   }, 3600000);
 
   function drawGaugeChart() {
     const api =
-      "https://api.eia.gov/series/?api_key=fa3e15d4b9f8fc2369d691db34848bc4&series_id=EBA.NE-ALL.D.HL";
+      "https://api.eia.gov/series/?api_key=" +
+      apiKey +
+      "&series_id=EBA.NE-ALL.D.HL";
     fetch(api)
       .then(response => response.json())
       .then(res => {
