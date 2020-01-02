@@ -20,3 +20,23 @@ a:visited {
 // a:hover {
 //   color: red;
 // }
+
+.demand-container {
+  margin: 20px auto;
+  // margin: 10px;
+  text-align: center;
+  height: 240px;
+}
+
+.demand-cards {
+  height: 100%;
+  text-align: center;
+}
+
+.demand-gauge {
+  margin: 0px auto;
+  padding: 20px 20px 0px 30px;
+  // padding-left: 30px;
+  text-align: center;
+  height: 100%;
+}
